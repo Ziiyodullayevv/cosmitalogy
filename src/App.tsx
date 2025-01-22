@@ -106,7 +106,7 @@ const App = () => {
       </header>
 
       <main>
-        <section className='bg-[url(banner.png)] bg-cover bg-center backdrop-blur-2xl bg-fixed'>
+        <section className='bg-[url(/banner.png)] bg-cover bg-center backdrop-blur-2xl bg-fixed'>
           <div className='container mx-auto px-4 sm:px-10'>
             <div
               data-aos='fade-up'
