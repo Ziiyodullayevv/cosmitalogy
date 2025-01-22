@@ -325,7 +325,7 @@ const App = () => {
           </div>
         </section>
 
-        <section className='py-24 bg-[url(ban.png)] text-white bg-fixed'>
+        <section className='py-24 bg-[url(/ban.png)] text-white bg-fixed'>
           <div className='container mx-auto px-4 sm:px-10'>
             <h2 data-aos='fade-up' className='text-4xl uppercase text-center'>
               Нима учун <span className='text-orange-500'> бизни</span>{' '}
@@ -398,14 +398,11 @@ const App = () => {
               </p>
             </aside>
             <div className='flex gap-4 h-5'>
-              <a href='#' className='link' aria-label='Github Link'>
-                <span className='icon-[tabler--brand-github] size-5'></span>
-              </a>
               <a href='#' className='link' aria-label='Facebook Link'>
-                <span className='icon-[tabler--brand-facebook] size-5'></span>
+                <span className='icon-[tabler--brand-telegram] size-5'></span>
               </a>
               <a href='#' className='link' aria-label='X Link'>
-                <span className='icon-[tabler--brand-x] size-5'></span>
+                <span className='icon-[tabler--brand-instagram] size-5'></span>
               </a>
               <a href='#' className='link' aria-label='Google Link'>
                 <span className='icon-[tabler--brand-google] size-5'></span>
