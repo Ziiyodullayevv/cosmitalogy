@@ -133,9 +133,9 @@ const App = () => {
 
         <section className='py-24'>
           <div className='container mx-auto px-4 sm:px-10'>
-            <div className='flex items-center flex-col sm:flex-row sm:justify-between gap-10'>
+            <div className='flex items-center flex-col lg:flex-row lg:justify-between gap-10'>
               <div data-aos='fade-up' className='flex-1'>
-                <img className='w-full' src='woman.png' alt='woman' />
+                <img className='w-full' src='/woman.png' alt='woman' />
               </div>
 
               <div data-aos='fade-up' data-aos-delay='300' className='flex-1'>
@@ -210,7 +210,7 @@ const App = () => {
                     <article
                       data-aos='fade-up'
                       key={post.id}
-                      className='flex max-w-xl bg-[url(https://keynote.tailwindui.com/_next/static/media/background-newsletter.488a0204.jpg)] bg-no-repeat bg-left border border-solid border-gray-300 p-4 rounded-lg flex-col items-start justify-between'
+                      className='flex w-full bg-[url(https://keynote.tailwindui.com/_next/static/media/background-newsletter.488a0204.jpg)] bg-no-repeat bg-left border border-solid border-gray-300 p-4 rounded-lg flex-col items-start justify-between'
                     >
                       <div className='flex items-center gap-x-4 text-xs'>
                         <h3 className='relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100'>
@@ -375,7 +375,7 @@ const App = () => {
 
         <section
           id='contact'
-          className='py-24 relative bg-[url(/footer.webp)] text-white text-center bg-fixed'
+          className='py-24 relative bg-[url(/footer.webp)] bg-no-repeat bg-cover text-white text-center bg-fixed'
         >
           <span className='absolute top-0 left-0 right-0 bottom-0 block -z-0 bg-black/50'></span>
           <div className='container mx-auto px-4 sm:px-10'>
