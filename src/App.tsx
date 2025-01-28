@@ -106,7 +106,7 @@ const App = () => {
       </header>
 
       <main>
-        <section className='bg-[url(/banner.png)] bg-cover bg-center backdrop-blur-2xl bg-fixed'>
+        <section className='bg-[url(/banner.jpg)] bg-cover bg-center backdrop-blur-2xl bg-fixed'>
           <div className='container mx-auto px-4 sm:px-10'>
             <div
               data-aos='fade-up'
@@ -248,11 +248,9 @@ const App = () => {
                 <div className='relative z-[1]'>
                   <p className='text-base-content text-lg'>
                     <em className='text-black/70'>
-                      Косметология хозирги кунда энг тез у’саётган
-                      индустриялардан бири. Ушбу соха вакилларига талаб йилдан
-                      йилга ошиб бормокда, аммо кандай килиб бундай ракобат
-                      кучли бу’лган сохада юксалиш мумкин, кандай килиб халк
-                      мехрини козониб муваффакиятга эришиш мумкин?
+                      Курс давомида хамкор компанияларда кушимча косметологик
+                      тренингларга катнашиб хам малака ошириб хам кушимча
+                      сертификатларга эга булишингиз мумкин булади
                     </em>
                   </p>
                 </div>
@@ -304,22 +302,32 @@ const App = () => {
               Бизнинг <span className='text-orange-500'>фалсафамиз</span>
             </h2>
 
-            <div className='text-center mt-10 font-semibold text-lg gap-3 max-w-[900px] flex  flex-col mx-auto'>
-              <p data-aos='fade-up'>
-                <span className='text-orange-500'>Alhayaa cosmetology</span>{' '}
-                хамиша бошкалардан узининг юкори кадриятлари билан ажралиб
-                турган
+            <h3 className='text-center mt-10 font-semibold text-lg max-w-[600px] mx-auto'>
+              Alhayaa cosmetology хамиша бошкалардан узининг юкори кадриятлари
+              билан ажралиб турган.
+            </h3>
+
+            <h4 className='text-center font-semibold mt-5'>
+              <span className='font-bold text-orange-500 '>Alhayaa</span> – бу …
+            </h4>
+
+            <div className='text-center mt-10 font-semibold text-lg gap-3 max-w-[900px] flex justify-between mx-auto'>
+              <p
+                data-aos='fade-up'
+                className='flex-1 bg-clip-padding p-8 border border-solid border-gray-300 rounded-lg'
+              >
+                … хаёт, тириклик, яъни гузалликга саломатликни йукотиш эвазига
+                эришиш эмас, балки зарарли муолажаларсиз, терини тириклайин
+                саклаб коли шва сифатини ошириш бизнинг асосий миссиямиз.
               </p>
-              <p data-aos='fade-up'>
-                <span className='text-orange-500'>Alhayaa</span> – бу хаёт. Яъни
-                гузалликни зарарли муолажаларсиз, тириклайин саклаб колиш
-                бизнинг асосий миссиямиз.
-              </p>
-              <p data-aos='fade-up'>
-                <span className='text-orange-500'>Alhayaa</span> – бу хаё. Яъни
-                бурттирилишлардан, сунъийликдан ва бирхил гузаллик
+
+              <p
+                data-aos='fade-up'
+                className='flex-1 bg-clip-padding p-8 border border-solid border-gray-300 rounded-lg'
+              >
+                … хаё. Яъни бурттирилишлардан, сунъийликдан ва бирхил гузаллик
                 стандартларидан йирокда булиш, узлигини саклаб, уз «фишкангизга»
-                ургу бериш
+                ургу бериш.
               </p>
             </div>
           </div>
@@ -344,15 +352,54 @@ const App = () => {
           </div>
         </section>
 
-        <section id='contact' className='py-24'>
+        <section className='py-24'>
           <div className='container mx-auto px-4 sm:px-10'>
-            <h2 data-aos='fade-up' className='text-4xl uppercase text-center'>
-              Контакт
+            <h2 className='text-center text-3xl font-semibold'>
+              КОСМЕТОЛОГ БИЛАН 1 КУН
             </h2>
-            <form data-aos='fade-up' className='max-w-sm mx-auto'>
+
+            <div className='text-center mt-10 font-semibold text-lg gap-3 max-w-[900px] flex justify-between mx-auto'>
+              <p
+                data-aos='fade-up'
+                className='flex-1 bg-clip-padding p-8 border border-solid border-gray-300 rounded-lg'
+              >
+                Агар сизда куркув ёки иккиланишлар булса, бизда «Косметолог
+                билан 1 кун» дастури мавжуд. Унга кура сиз кун давомида
+                косметлог фаолиятини консультация бериш жараёнидан бошлаб, барча
+                муолажаларни утказилишигача, кузатишингиз мумкин булади, ва бу
+                мутлако БЕПУЛ.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section
+          id='contact'
+          className='py-24 bg-[url(/footer.webp)] text-black bg-fixed'
+        >
+          <div className='container mx-auto px-4 sm:px-10'>
+            <h2
+              data-aos='fade-up'
+              className='text-4xl text-black uppercase text-center'
+            >
+              Богланиш учун <span className='text-orange-500'>контактлар:</span>
+            </h2>
+
+            <div className='flex flex-col mt-4 gap-4 justify-center items-center font-bold text-2xl'>
+              <a className='hover:text-orange-500' href='#'>
+                Адмминистратор
+              </a>
+              <a className='hover:text-orange-500' href='#'>
+                +998 97 728 20 40 - (Зилола Якубова)
+              </a>
+              <a className='hover:text-orange-500' href='#'>
+                +998 99 824 44 04 (продюсер)
+              </a>
+            </div>
+            {/* <form data-aos='fade-up' className='max-w-sm mx-auto'>
               <div className='mt-5'>
                 <input
-                  className='border w-full rounded-md px-4 py-2 text-black border-solid border-gray-500'
+                  className='border w-full border-black placeholder:text-black rounded-md px-4 py-2 text-black border-solid'
                   type='text'
                   placeholder='Исмингиз'
                   required
@@ -361,7 +408,7 @@ const App = () => {
 
               <div className='mt-4'>
                 <input
-                  className='border w-full rounded-md px-4 py-2 text-black border-solid border-gray-500'
+                  className='border w-full rounded-md border-black placeholder:text-black px-4 py-2 text-black border-solid'
                   type='tel'
                   placeholder='Телефон рақамингиз'
                   required
@@ -370,7 +417,7 @@ const App = () => {
 
               <div className='mt-4'>
                 <textarea
-                  className='border w-full rounded-md px-4 py-2 text-black border-solid border-gray-500'
+                  className='border w-full rounded-md border-black placeholder:text-black px-4 py-2 border-solid'
                   placeholder='Саволларингиз'
                   required
                 />
@@ -381,7 +428,7 @@ const App = () => {
               >
                 Юбориш
               </button>
-            </form>
+            </form> */}
           </div>
         </section>
       </main>
@@ -391,7 +438,7 @@ const App = () => {
           <div className='flex w-full items-center justify-between'>
             <aside className='grid-flow-col items-center'>
               <p>
-                ©2024{' '}
+                ©2025{' '}
                 <a className='link link-hover font-medium' href='#'>
                   Alhayaa
                 </a>
