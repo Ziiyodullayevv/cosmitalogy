@@ -311,7 +311,7 @@ const App = () => {
               <span className='font-bold text-orange-500 '>Alhayaa</span> – бу …
             </h4>
 
-            <div className='text-center mt-10 font-semibold text-lg gap-3 max-w-[900px] flex justify-between mx-auto'>
+            <div className='text-center flex-col md:flex-row mt-10 font-semibold text-lg gap-3 max-w-[900px] flex justify-between mx-auto'>
               <p
                 data-aos='fade-up'
                 className='flex-1 bg-clip-padding p-8 border border-solid border-gray-300 rounded-lg'
@@ -375,17 +375,18 @@ const App = () => {
 
         <section
           id='contact'
-          className='py-24 bg-[url(/footer.webp)] text-black bg-fixed'
+          className='py-24 relative bg-[url(/footer.webp)] text-white text-center bg-fixed'
         >
+          <span className='absolute top-0 left-0 right-0 bottom-0 block -z-0 bg-black/50'></span>
           <div className='container mx-auto px-4 sm:px-10'>
             <h2
               data-aos='fade-up'
-              className='text-4xl text-black uppercase text-center'
+              className='text-4xl relative z-10 text-white uppercase text-center'
             >
               Богланиш учун <span className='text-orange-500'>контактлар:</span>
             </h2>
 
-            <div className='flex flex-col mt-4 gap-4 justify-center items-center font-bold text-2xl'>
+            <div className='flex flex-col relative z-10 mt-4 gap-4 justify-center items-center font-bold text-2xl'>
               <a className='hover:text-orange-500' href='#'>
                 Адмминистратор
               </a>
