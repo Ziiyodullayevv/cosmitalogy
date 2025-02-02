@@ -1,15 +1,18 @@
+import MyModal from './components/Modal';
+import Example from './components/Plan';
+
 const App = () => {
   const posts = [
     {
       id: 1,
       title: 'Косметологиянинг умумий тушунчалари',
       description: [
-        'Косметология асослари, йуналишлари, имкониятлари',
-        'Косметология сохаси: Мажбуриятлар ва косметология этикаси.',
-        'Тери анатомия ва физиологияси.',
-        'Тери турлари, ахамиятли жихатлари, диагностика услублари.',
-        'Тери парваришининг асосий боскичлари.',
-        'Косметика: таркибларини урганиш, воситалар таёрлаш.',
+        '1. Косметология асослари, йуналишлари, имкониятлари',
+        '2. Косметология сохаси: Мажбуриятлар ва косметология этикаси.',
+        '3. Тери анатомия ва физиологияси.',
+        '4. Тери турлари, ахамиятли жихатлари, диагностика услублари.',
+        '5. Тери парваришининг асосий боскичлари.',
+        '6. Косметика: таркибларини урганиш, воситалар таёрлаш.',
       ],
       category: { title: '1 МОДУЛЬ' },
     },
@@ -17,12 +20,13 @@ const App = () => {
       id: 2,
       title: 'Эстетик косметология',
       description: [
-        'Тери диагностикаси',
-        'Юз ва бу’йин парвариши буйича парвариш базаси: кадамлар ва техникалар',
-        'Пилинглар: механик, кимёвий, ферментатив',
-        'Сезувчан ва муаммоли тери парвариши',
-        'Пигмент доглар билан ишлаш',
-        'Тери сифати билан ишлаш табий ёшариш процессини ишга тушириш',
+        '1. Тери диагностикаси',
+        '2. Юз ва бу’йин парвариши буйича парвариш базаси: кадамлар ва техникалар',
+        '3. Пилинглар: механик, кимёвий, ферментатив',
+        '4. Сезувчан ва муаммоли тери парвариши',
+        '5. Пигмент доглар билан ишлаш',
+        '6. Тери сифати билан ишлаш табий ёшариш процессини ишга тушириш',
+        '7. Овкатланиш рационининг ташки куриниш билан богликлиги',
       ],
       category: { title: '2 МОДУЛЬ' },
     },
@@ -30,14 +34,12 @@ const App = () => {
       id: 3,
       title: 'Инъекцион косметология',
       description: [
-        'Анатомия ва инъекциялар усуллари асослари.',
-        'Контур пластикасининг асослари.',
-        'Биоревитализация, биорепарация, редермализация.',
-        'Полимолочная кислота, поликапролактон, экзосомалар.',
-        'Мезотерапия, коктейллар.',
-        'Ботулинотерапия: мимик ажинлар билан ишлаш.',
-        'Карши курсатмалар ва асоратлар.',
-        'Асоратлар билан ишлаш',
+        '1. Анатомия ва инъекциялар усуллари асослари.',
+        '2. Контур пластикасининг асослари.',
+        '3. Биоревитализация, биорепарация, редермализация.',
+        '4. Мезотерапия, коктейллар.',
+        '5. Карши курсатмалар ва асоратлар.',
+        '6. Асоратлар билан ишлаш',
       ],
       category: { title: '3 МОДУЛЬ' },
     },
@@ -45,10 +47,10 @@ const App = () => {
       id: 4,
       title: 'Аппарат косметологияси',
       description: [
-        'Аппаратли муолажалар билан танишиш ва уларни солиштириш.',
-        'RF-лифтинг, Termo-lift, Smass-лифтинг тери таранглигини тиклаш.',
-        'Микроток терапияси, дарсонвализация тер ива мушаклар билан.',
-        'Лазер косметологияси: ижобий жихатлари ва салбий окибатлари.',
+        '1. Аппаратли муолажалар билан танишиш ва уларни солиштириш.',
+        '2. RF-лифтинг, Termo-lift, Smass-лифтинг тери таранглигини тиклаш.',
+        '3. Микроток терапияси, дарсонвализация тер ива мушаклар билан.',
+        '4. Лазер косметологияси: ижобий жихатлари ва салбий окибатлари.',
       ],
       category: { title: '4 МОДУЛЬ' },
     },
@@ -56,11 +58,11 @@ const App = () => {
       id: 5,
       title: 'Инновацион косметология',
       description: [
-        'Нанокосметология: замонавий формула ва технологиялардан фойдаланиш.',
-        'Плазмотерапия (PRP): усул ва натижалар.',
-        'Косметологиядаги генетик ёндашув.',
-        'Биоматериаллар билан ишлаш.',
-        'Газсимон элементлар билан тезкор ёшартириш услублари.',
+        '1. Нанокосметология: замонавий формула ва технологиялардан фойдаланиш.',
+        '2. Плазмотерапия (PRP): усул ва натижалар.',
+        '3. Косметологиядаги генетик ёндашув.',
+        '4. Биоматериаллар билан ишлаш.',
+        '5. Газсимон элементлар билан тезкор ёшартириш услублари.',
       ],
       category: { title: '5 МОДУЛЬ' },
     },
@@ -68,11 +70,14 @@ const App = () => {
       id: 6,
       title: 'Основы дерматология ва косметология асослари',
       description: [
-        'Тери касалликларининг дифференциал диагностикаси.',
-        'Акне: сабаблар, боскичлар, даволаш чоралари.',
-        'Гиперпигментация: курашиш усуллари.',
-        'Купероз: сабаблари, профилактика, даволаш ва парвариш.',
-        'Овкатланиш рационининг ташки куриниш билан богликлиги.',
+        '1. Тери касалликларининг дифференциал диагностикаси.',
+        '2. Акне: сабаблар, боскичлар, даволаш чоралари.',
+        '3. Ботулинотерапия: мимик ажинлар билан ишлаш.',
+        '4. Кариш аломатлари билан курашишнинг энг кучли услублари.',
+        '5. Полимолочная кислота, поликапролактон, экзосомалар.',
+        '6. Гиперпигментация: курашиш усуллари.',
+        '7. Купероз: сабаблари, профилактика, даволаш ва парвариш.',
+        '8. Умуртка погонасида бажариладиган инъекциялар.',
       ],
       category: { title: '6 МОДУЛЬ' },
     },
@@ -86,10 +91,10 @@ const App = () => {
       id: 8,
       title: 'Амалиёт ва сертификация',
       description: [
-        'Барча узлаштирилган билимлар намойиши.',
-        'Моделлар билан ишлаш.',
-        'Якуний экзамен (назарий ва амалий билимларни текшириш).',
-        'Сертификатларни такдим этиш.',
+        '1. Барча узлаштирилган билимлар намойиши.',
+        '2. Моделлар билан ишлаш.',
+        '3. Якуний экзамен (назарий ва амалий билимларни текшириш).',
+        '4. Сертификатларни такдим этиш.',
       ],
       category: { title: '8 МОДУЛЬ' },
     },
@@ -106,27 +111,28 @@ const App = () => {
       </header>
 
       <main>
-        <section className='bg-[url(/banner.jpg)] bg-cover bg-center backdrop-blur-2xl bg-fixed'>
+        <section className='bg-[url(/bg.webp)] relative bg-cover bg-right-top backdrop-blur-2xl'>
+          <span className='bg-white/20 absolute left-0 right-0 bottom-0 top-0 backdrop-blur-lg'></span>
           <div className='container mx-auto px-4 sm:px-10'>
             <div
               data-aos='fade-up'
               data-aos-anchor-placement='top-center'
               className='flex flex-col items-center justify-center min-h-[calc(100vh-76px)] '
             >
-              <h1 className='text-4xl sm:text-5xl text-[#333] text-center max-w-[700px] font-bold'>
-                <span className='text-[#FB7902]'>7 ХАФТАДА</span> ПРОФЕССИОНАЛ
-                КОСМЕТОЛОГ БУ’ЛИНГ
+              <h1 className='text-4xl relative z-10 sm:text-5xl text-black text-center max-w-[700px] font-bold'>
+                <span className='text-[#FB7902]'>7 ХАФТАДА</span> КОСМЕТОЛОГИЯ
+                МУТАХАССИСИГА АЙЛАНИНГ
               </h1>
-              <p className='my-5 text-[#444] text-center'>
-                Гузаллик индустриясидаги касбни эгаллашни истаганлар учун
+
+              <p className=' mt-5 relative z-10 max-w-xl text-black text-center'>
+                Гўзаллик индустриясидаги ______ касбни эгаллашни истаганлар учун
                 экспресс-курс
               </p>
-              <a
-                href='#contact'
-                className='h-[54px] flex justify-center items-center w-[180px] bg-[#1E1E1E] text-white'
-              >
-                Курсга ёзилиш
-              </a>
+              <p className='my-5 relative z-10 max-w-xl text-black text-center'>
+                Қандай қилиб тез ўзгарувчан ва юқори рақобатли соҳада ўз ўрнини
+                топиш ва юқори малакали мутахассисга айланиш мумкин?
+              </p>
+              <MyModal />
             </div>
           </div>
         </section>
@@ -134,8 +140,17 @@ const App = () => {
         <section className='py-24'>
           <div className='container mx-auto px-4 sm:px-10'>
             <div className='flex items-center flex-col lg:flex-row lg:justify-between gap-10'>
-              <div data-aos='fade-up' className='flex-1'>
-                <img className='w-full' src='/woman.png' alt='woman' />
+              <div
+                data-aos='fade-up'
+                className='flex-1 rounded-lg overflow-hidden max-h-[500px] relative'
+              >
+                <span
+                  style={{
+                    background: 'linear-gradient(transparent 40%, black 150%)',
+                  }}
+                  className='absolute top-0 bottom-0 right-0 left-0'
+                ></span>
+                <img className='w-full' src='/woman.webp' alt='woman' />
               </div>
 
               <div data-aos='fade-up' data-aos-delay='300' className='flex-1'>
@@ -147,35 +162,55 @@ const App = () => {
                     <span className='text-white font-bold rounded-sm p-3 flex justify-center items-center bg-black'>
                       01
                     </span>
-                    Юкори малакали фармацевт-косметолог
+                    Юкори малакали{' '}
+                    <span className='text-orange-500 font-semibold'>
+                      фармацевт-косметолог
+                    </span>
                   </div>
 
                   <div className='flex items-center gap-3'>
                     <span className='text-white font-bold rounded-sm p-3 flex justify-center items-center bg-black'>
                       02
                     </span>
-                    Тиббий билим ва 10 йиллик тажрибага эга
+                    Тиббий билим ва{' '}
+                    <span className='text-orange-500 font-semibold'>
+                      10 йиллик
+                    </span>{' '}
+                    тажрибага эга
                   </div>
 
                   <div className='flex items-center gap-3'>
                     <span className='text-white font-bold rounded-sm p-3 flex justify-center items-center bg-black'>
                       03
                     </span>
-                    20-дан ортик мустакил косметологларни таёрлаган (етиштирган)
+                    <span className='text-orange-500 font-semibold'>
+                      Alhayaa
+                    </span>{' '}
+                    косметология маркази асосчиси;
                   </div>
 
                   <div className='flex items-center gap-3'>
                     <span className='text-white font-bold rounded-sm p-3 flex justify-center items-center bg-black'>
                       04
                     </span>
-                    Инъекцион ва эстетик техникалар автори
+                    <span className='text-orange-500 font-semibold'>
+                      Инъекцион
+                    </span>{' '}
+                    ва
+                    <span className='text-orange-500 font-semibold'>
+                      эстетик
+                    </span>{' '}
+                    техникалар автори
                   </div>
 
                   <div className='flex items-center gap-3'>
                     <span className='text-white font-bold rounded-sm p-3 flex justify-center items-center bg-black'>
                       05
                     </span>
-                    «У’зингга у’зинг косметолог» курсининг етакчиси
+                    <span className='text-orange-500 font-semibold'>
+                      «У’зингга у’зинг косметолог»
+                    </span>{' '}
+                    курсининг етакчиси
                   </div>
 
                   <div className='flex gap-3'>
@@ -183,8 +218,11 @@ const App = () => {
                       06
                     </span>
                     <p>
-                      Телевидение ва ижтимоий тармоклар оркали хавфсиз
-                      косметология гоясини олга сурувчи лойихалар муаллифи.
+                      Телевидение ва ижтимоий тармоклар оркали{' '}
+                      <span className='text-orange-500 font-semibold'>
+                        хавфсиз косметология
+                      </span>{' '}
+                      гоясини олга сурувчи лойихалар муаллифи.
                     </p>
                   </div>
                 </div>
@@ -193,7 +231,61 @@ const App = () => {
           </div>
         </section>
 
-        <section>
+        <section className='py-24 text-white bg-[#222]'>
+          <div className='container mx-auto px-4 sm:px-10'>
+            <h2 data-aos='fade-up' className='text-4xl text-center'>
+              УШБУ <span className='text-orange-500'>КУРС</span> КИМЛАР УЧУН?
+            </h2>
+            <div className='flex mt-10 justify-between flex-col lg:flex-row items-center gap-5'>
+              <div className='flex flex-1 items-center text-lg justify-center flex-col gap-3'>
+                <p
+                  className='p-5 w-full md:w-[70%] bg-white/5 rounded-md'
+                  data-aos='fade-up'
+                >
+                  1. Косметология сохасини урганишни хохловчи, аммо нимадан
+                  бошлашни билмаётганлар учун.
+                </p>
+
+                <p
+                  className='p-5 w-full md:w-[70%] bg-white/5 rounded-md'
+                  data-aos='fade-up'
+                >
+                  2. Косметология курсларини тамомлаб, ишни бошлай олмаётганлар
+                  учун.
+                </p>
+
+                <p
+                  className='p-5 w-full md:w-[70%] bg-white/5 rounded-md'
+                  data-aos='fade-up'
+                >
+                  3. Назарий{' '}
+                  <span className='font-semibold text-orange-500'>
+                    билимлари бор,
+                  </span>{' '}
+                  аммо инъекцион муолажаларга нисбатан куркувни енга
+                  олмаётганлар учун.
+                </p>
+
+                <p
+                  className='p-5 w-full md:w-[70%] bg-white/5 rounded-md'
+                  data-aos='fade-up'
+                >
+                  4. Узок танаффусдан сунг билимларини янгилашни хохлаганлар
+                  учун.
+                </p>
+                <p
+                  className='p-5 w-full md:w-[70%] bg-white/5 rounded-md'
+                  data-aos='fade-up'
+                >
+                  5. Косметолог булиб ишлаш учун эмас, у’зи ва оиласи учун
+                  урганишни истаганлар учун.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className='py-24'>
           <div className='container mx-auto px-4 sm:px-10'>
             <div className='bg-white'>
               <div className=''>
@@ -210,15 +302,15 @@ const App = () => {
                     <article
                       data-aos='fade-up'
                       key={post.id}
-                      className='flex w-full bg-[url(https://keynote.tailwindui.com/_next/static/media/background-newsletter.488a0204.jpg)] bg-no-repeat bg-left border border-solid border-gray-300 p-4 rounded-lg flex-col items-start justify-between'
+                      className='flex w-full bg-gray-900 text-white border border-solid border-gray-300 p-6 rounded-lg flex-col items-start'
                     >
                       <div className='flex items-center gap-x-4 text-xs'>
-                        <h3 className='relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100'>
+                        <h3 className='relative z-10 rounded-full text-white text-md bg-orange-500 px-3 py-1.5 font-medium'>
                           {post.category.title}
                         </h3>
                       </div>
                       <div className='group relative'>
-                        <h3 className='mt-3 text-lg/6 font-semibold text-gray-900 group-hover:text-gray-600'>
+                        <h3 className='mt-3 text-xl/6 text-gray-50 font-bold mb-3'>
                           <span>
                             <span className='absolute inset-0' />
                             {post.title}
@@ -227,71 +319,41 @@ const App = () => {
 
                         <ul className='list-none flex flex-col gap-3'>
                           {post.description.map((item) => (
-                            <li key={item}>{item}</li>
+                            <li className='' key={item}>
+                              {item}
+                            </li>
                           ))}
                         </ul>
                       </div>
                     </article>
                   ))}
                 </div>
+                <div className='flex justify-center mt-20'>
+                  <MyModal />
+                </div>
               </div>
             </div>
           </div>
         </section>
 
-        <section className='py-24'>
-          <div className='container mx-auto sm:px-10'>
-            <div className='bg-purple-950/10 p-10 rounded-lg bg-[url(https://keynote.tailwindui.com/_next/static/media/background-newsletter.488a0204.jpg)] bg-cover bg-no-repeat'>
+        <section className='py-24 bg-black'>
+          <div className='container mx-auto px-5 sm:px-10'>
+            <div className='bg-purple-950/10 mx-auto max-w-[700px] p-10 rounded-lg bg-[url(https://keynote.tailwindui.com/_next/static/media/background-newsletter.488a0204.jpg)] bg-cover bg-no-repeat'>
               <blockquote data-aos='fade-up' className='relative'>
-                <span className='icon-[tabler--quote] text-base-300/80 absolute -start-3 -top-3 size-16 rotate-180 rtl:rotate-0'></span>
-
                 <div className='relative z-[1]'>
                   <p className='text-base-content text-lg'>
-                    <em className='text-black/70'>
-                      Курс давомида хамкор компанияларда кушимча косметологик
-                      тренингларга катнашиб хам малака ошириб хам кушимча
-                      сертификатларга эга булишингиз мумкин булади
+                    <em className='text-black font-bold'>
+                      Курс давомида{' '}
+                      <span className='text-orange-500'>
+                        хамкор компанияларда
+                      </span>{' '}
+                      кушимча косметологик тренингларга катнашиб хам малака
+                      ошириб хам кушимча сертификатларга эга булишингиз мумкин
+                      булади
                     </em>
                   </p>
                 </div>
               </blockquote>
-            </div>
-          </div>
-        </section>
-
-        <section className='py-24 text-white bg-[#222]'>
-          <div className='container mx-auto px-4 sm:px-10'>
-            <div className='flex justify-between flex-col lg:flex-row items-center gap-5'>
-              <div className='flex flex-col gap-3 text-base'>
-                <h2 data-aos='fade-up' className='text-4xl'>
-                  УШБУ <span className='text-orange-500'>КУРС</span> КИМЛАР
-                  УЧУН?
-                </h2>
-                <p data-aos='fade-up'>
-                  Косметология сохасини урганишни хохловчи, аммо нимадан
-                  бошлашни билмаётганлар учун.
-                </p>
-
-                <p data-aos='fade-up'>
-                  Косметология курсларини тамомлаб, ишни бошлай олмаётганлар
-                  учун.
-                </p>
-
-                <p data-aos='fade-up'>
-                  Назарий билимлари булган, аммо инъекцион муолажаларга нисбатан
-                  куркувни енга олмаётганлар учун.
-                </p>
-
-                <p data-aos='fade-up'>
-                  Узок танаффусдан сунг билимларини янгилашни хохлаганлар учун.
-                </p>
-                <p data-aos='fade-up'>
-                  Косметолог булиб ишлаш учун эмас, у’зи ва оиласи учун
-                  урганишни истаганлар учун.
-                </p>
-              </div>
-
-              <img data-aos='fade-up' src='c.png' alt='' />
             </div>
           </div>
         </section>
@@ -333,6 +395,8 @@ const App = () => {
           </div>
         </section>
 
+        <Example />
+
         <section className='py-24 bg-[url(/ban.png)] text-white bg-fixed'>
           <div className='container mx-auto px-4 sm:px-10'>
             <h2 data-aos='fade-up' className='text-4xl uppercase text-center'>
@@ -344,32 +408,57 @@ const App = () => {
               data-aos='fade-up'
               className='text-center mt-10 font-semibold text-lg gap-3 max-w-[900px] flex  flex-col mx-auto'
             >
-              <p>Назарий хамда амалий билимлар бирдек олиб борилади;</p>
-              <p>Асоратлар билан хам ишлаш ургатилади</p>
-              <p>Укув программаси 3 ойга мулжалланган, аммо хохишингизга</p>
-              <p>ура яна 3 ой амалиётингизни мустахкамлашингиз мумкин.</p>
+              <p className='w-full md:w-[70%] bg-white/10 p-6 rounded-md mx-auto'>
+                Назарий хамда амалий билимлар бирдек олиб борилади
+              </p>
+              <p className='w-full md:w-[70%] bg-white/10 p-6 rounded-md mx-auto'>
+                Салбий асоратлар билан хам ишлаш ургатилади
+              </p>
+              <p className='w-full md:w-[70%] bg-white/10 p-6 rounded-md mx-auto'>
+                Укув программаси{' '}
+                <span className='text-orange-500 font-semibold'>
+                  3 ойга мулжалланган
+                </span>
+                , аммо хохишингизга
+              </p>
+              <p className='w-full md:w-[70%] bg-white/10 p-6 rounded-md mx-auto'>
+                Укув программаси{' '}
+                <span className='text-orange-500 font-semibold'> 2 ойга</span>{' '}
+                мулжалланган, аммо хохишингизга кура яна{' '}
+                <span className='text-orange-500 font-semibold'>4 ой</span>{' '}
+                амалиётингизни мустахкамлаш учун колишингиз мумкин.
+              </p>
             </div>
           </div>
         </section>
 
         <section className='py-24'>
           <div className='container mx-auto px-4 sm:px-10'>
-            <h2 className='text-center text-3xl font-semibold'>
-              КОСМЕТОЛОГ БИЛАН 1 КУН
+            <h2
+              data-aos='fade-up'
+              className='text-center text-3xl font-semibold'
+            >
+              КОСМЕТОЛОГ БИЛАН{' '}
+              <span className='text-orange-500 font-semibold'>1 КУН</span>
             </h2>
-
             <div className='text-center mt-10 font-semibold text-lg gap-3 max-w-[900px] flex justify-between mx-auto'>
               <p
                 data-aos='fade-up'
                 className='flex-1 bg-clip-padding p-8 border border-solid border-gray-300 rounded-lg'
               >
-                Агар сизда куркув ёки иккиланишлар булса, бизда «Косметолог
-                билан 1 кун» дастури мавжуд. Унга кура сиз кун давомида
-                косметлог фаолиятини консультация бериш жараёнидан бошлаб, барча
-                муолажаларни утказилишигача, кузатишингиз мумкин булади, ва бу
-                мутлако БЕПУЛ.
+                Агар сизда куркув ёки иккиланишлар булса, бизда{' '}
+                <span className='text-orange-500 font-semibold'>
+                  «Косметолог билан 1 кун»
+                </span>{' '}
+                дастури мавжуд. Унга кура сиз кун давомида косметлог фаолиятини
+                консультация бериш жараёнидан бошлаб, барча муолажаларни
+                утказилишигача, кузатишингиз мумкин булади, ва бу мутлако{' '}
+                <span className='text-orange-500 font-semibold'>БЕПУЛ</span>.
               </p>
             </div>
+          </div>
+          <div className='flex justify-center mt-10'>
+            <MyModal />
           </div>
         </section>
 
@@ -377,7 +466,7 @@ const App = () => {
           id='contact'
           className='py-24 relative bg-[url(/footer.webp)] bg-no-repeat bg-cover text-white text-center bg-fixed'
         >
-          <span className='absolute top-0 left-0 right-0 bottom-0 block -z-0 bg-black/50'></span>
+          <span className='absolute top-0 backdrop-blur-sm left-0 right-0 bottom-0 block -z-0 bg-black/50'></span>
           <div className='container mx-auto px-4 sm:px-10'>
             <h2
               data-aos='fade-up'
@@ -397,39 +486,6 @@ const App = () => {
                 +998 99 824 44 04 (продюсер)
               </a>
             </div>
-            {/* <form data-aos='fade-up' className='max-w-sm mx-auto'>
-              <div className='mt-5'>
-                <input
-                  className='border w-full border-black placeholder:text-black rounded-md px-4 py-2 text-black border-solid'
-                  type='text'
-                  placeholder='Исмингиз'
-                  required
-                />
-              </div>
-
-              <div className='mt-4'>
-                <input
-                  className='border w-full rounded-md border-black placeholder:text-black px-4 py-2 text-black border-solid'
-                  type='tel'
-                  placeholder='Телефон рақамингиз'
-                  required
-                />
-              </div>
-
-              <div className='mt-4'>
-                <textarea
-                  className='border w-full rounded-md border-black placeholder:text-black px-4 py-2 border-solid'
-                  placeholder='Саволларингиз'
-                  required
-                />
-              </div>
-              <button
-                type='submit'
-                className='bg-black w-full mt-4 rounded-md py-3 text-white px-4'
-              >
-                Юбориш
-              </button>
-            </form> */}
           </div>
         </section>
       </main>
