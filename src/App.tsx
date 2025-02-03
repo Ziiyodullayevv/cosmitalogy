@@ -1,5 +1,6 @@
 import MyModal from './components/Modal';
 import Example from './components/Plan';
+import { MdArrowDownward } from 'react-icons/md';
 
 const App = () => {
   const posts = [
@@ -68,7 +69,7 @@ const App = () => {
     },
     {
       id: 6,
-      title: 'Основы дерматология ва косметология асослари',
+      title: 'Дерматология ва косметология асослари',
       description: [
         '1. Тери касалликларининг дифференциал диагностикаси.',
         '2. Акне: сабаблар, боскичлар, даволаш чоралари.',
@@ -117,22 +118,28 @@ const App = () => {
             <div
               data-aos='fade-up'
               data-aos-anchor-placement='top-center'
-              className='flex flex-col items-center justify-center min-h-[calc(100vh-76px)] '
+              className='flex flex-col items-center justify-center min-h-[600px]'
             >
               <h1 className='text-4xl relative z-10 sm:text-5xl text-black text-center max-w-[700px] font-bold'>
                 <span className='text-[#FB7902]'>7 ХАФТАДА</span> КОСМЕТОЛОГИЯ
                 МУТАХАССИСИГА АЙЛАНИНГ
               </h1>
 
-              <p className=' mt-5 relative z-10 max-w-xl text-black text-center'>
-                Гўзаллик индустриясидаги ______ касбни эгаллашни истаганлар учун
-                экспресс-курс
+              <p className=' my-6 relative z-10 max-w-xl text-black text-center'>
+                Гўзаллик индустриясининг юқори талабдаги касбини эгаллашни
+                истаганлар учун экспресс-курс. Қандай қилиб тез ўзгарувчан ва
+                юқори рақобатли соҳада ўз ўрнини топиш ва юқори малакали
+                мутахассисга айланиш мумкин
               </p>
-              <p className='my-5 relative z-10 max-w-xl text-black text-center'>
-                Қандай қилиб тез ўзгарувчан ва юқори рақобатли соҳада ўз ўрнини
-                топиш ва юқори малакали мутахассисга айланиш мумкин?
-              </p>
-              <MyModal />
+              <a
+                className='py-3 px-10 bg-[#333] relative z-10 text-white'
+                href='#contact'
+              >
+                БЕПУЛ ЁЗИЛИШ
+              </a>
+              <div className='w-[70px] animate flex justify-center items-center rounded-full mt-5 h-[70px] relative z-10 bg-white'>
+                <MdArrowDownward className='text-3xl' />
+              </div>
             </div>
           </div>
         </section>
@@ -162,55 +169,65 @@ const App = () => {
                     <span className='text-white font-bold rounded-sm p-3 flex justify-center items-center bg-black'>
                       01
                     </span>
-                    Юкори малакали{' '}
-                    <span className='text-orange-500 font-semibold'>
-                      фармацевт-косметолог
-                    </span>
+                    <p>
+                      Юкори малакали{' '}
+                      <span className='text-orange-500 font-semibold'>
+                        фармацевт-косметолог
+                      </span>
+                    </p>
                   </div>
 
                   <div className='flex items-center gap-3'>
                     <span className='text-white font-bold rounded-sm p-3 flex justify-center items-center bg-black'>
                       02
                     </span>
-                    Тиббий билим ва{' '}
-                    <span className='text-orange-500 font-semibold'>
-                      10 йиллик
-                    </span>{' '}
-                    тажрибага эга
+                    <p>
+                      Тиббий билим ва{' '}
+                      <span className='text-orange-500 font-semibold'>
+                        10 йиллик
+                      </span>{' '}
+                      тажрибага эга
+                    </p>
                   </div>
 
                   <div className='flex items-center gap-3'>
                     <span className='text-white font-bold rounded-sm p-3 flex justify-center items-center bg-black'>
                       03
                     </span>
-                    <span className='text-orange-500 font-semibold'>
-                      Alhayaa
-                    </span>{' '}
-                    косметология маркази асосчиси;
+                    <p>
+                      <span className='text-orange-500 font-semibold'>
+                        Alhayaa
+                      </span>{' '}
+                      косметология маркази асосчиси
+                    </p>
                   </div>
 
                   <div className='flex items-center gap-3'>
                     <span className='text-white font-bold rounded-sm p-3 flex justify-center items-center bg-black'>
                       04
                     </span>
-                    <span className='text-orange-500 font-semibold'>
-                      Инъекцион
-                    </span>{' '}
-                    ва
-                    <span className='text-orange-500 font-semibold'>
-                      эстетик
-                    </span>{' '}
-                    техникалар автори
+                    <p>
+                      <span className='text-orange-500 font-semibold'>
+                        Инъекцион
+                      </span>{' '}
+                      ва{' '}
+                      <span className='text-orange-500 font-semibold'>
+                        эстетик
+                      </span>{' '}
+                      техникалар автори
+                    </p>
                   </div>
 
                   <div className='flex items-center gap-3'>
                     <span className='text-white font-bold rounded-sm p-3 flex justify-center items-center bg-black'>
                       05
                     </span>
-                    <span className='text-orange-500 font-semibold'>
-                      «У’зингга у’зинг косметолог»
-                    </span>{' '}
-                    курсининг етакчиси
+                    <p>
+                      <span className='text-orange-500 font-semibold'>
+                        «Ўзингга ўзинг косметолог»
+                      </span>{' '}
+                      курсининг етакчиси
+                    </p>
                   </div>
 
                   <div className='flex gap-3'>
@@ -294,7 +311,7 @@ const App = () => {
                     data-aos='fade-up'
                     className='text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl'
                   >
-                    Курс уз ичига куйидаги мавзуларни олади
+                    Курс ўз ичига қуйидаги мавзуларни олади.
                   </h2>
                 </div>
                 <div className='mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-6 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3'>
@@ -302,6 +319,7 @@ const App = () => {
                     <article
                       data-aos='fade-up'
                       key={post.id}
+                      id={post.id.toString()}
                       className='flex w-full bg-gray-900 text-white border border-solid border-gray-300 p-6 rounded-lg flex-col items-start'
                     >
                       <div className='flex items-center gap-x-4 text-xs'>
@@ -344,12 +362,15 @@ const App = () => {
                   <p className='text-base-content text-lg'>
                     <em className='text-black font-bold'>
                       Курс давомида{' '}
-                      <span className='text-orange-500'>
+                      <span className='text-orange-500 font-semibold'>
                         хамкор компанияларда
                       </span>{' '}
-                      кушимча косметологик тренингларга катнашиб хам малака
-                      ошириб хам кушимча сертификатларга эга булишингиз мумкин
-                      булади
+                      қўшимча косметологик тренингларга қатнашиб, малака ошириш
+                      ва{' '}
+                      <span className='text-orange-500 font-semibold'>
+                        қўшимча сертификатларга
+                      </span>{' '}
+                      эга бўлишингиз мумкин булади.
                     </em>
                   </p>
                 </div>
@@ -365,8 +386,8 @@ const App = () => {
             </h2>
 
             <h3 className='text-center mt-10 font-semibold text-lg max-w-[600px] mx-auto'>
-              Alhayaa cosmetology хамиша бошкалардан узининг юкори кадриятлари
-              билан ажралиб турган.
+              <span className='text-orange-500'>Alhayaa cosmetology</span> -
+              хамиша бошқалардан ўзининг олий кадриятлари билан ажралиб турган.
             </h3>
 
             <h4 className='text-center font-semibold mt-5'>
@@ -378,18 +399,19 @@ const App = () => {
                 data-aos='fade-up'
                 className='flex-1 bg-clip-padding p-8 border border-solid border-gray-300 rounded-lg'
               >
-                … хаёт, тириклик, яъни гузалликга саломатликни йукотиш эвазига
-                эришиш эмас, балки зарарли муолажаларсиз, терини тириклайин
-                саклаб коли шва сифатини ошириш бизнинг асосий миссиямиз.
+                … хаёт, тириклик, яъни гўзалликга саломатликни йўқотиш эвазига
+                эришиш эмас, балки зарарли муолажаларсиз, терини "тириклайин
+                сақлаб қолиш" ва сифатини ошириш бизнинг асосий миссиямиз.
               </p>
 
               <p
                 data-aos='fade-up'
                 className='flex-1 bg-clip-padding p-8 border border-solid border-gray-300 rounded-lg'
               >
-                … хаё. Яъни бурттирилишлардан, сунъийликдан ва бирхил гузаллик
-                стандартларидан йирокда булиш, узлигини саклаб, уз «фишкангизга»
-                ургу бериш.
+                … хаё. Яъни биз ортиқча бўрттирилишларга, сунъийликга қаршимиз.
+                Шуниндек, қолипдагидек бирхил гўзаллик стандартларидан йироқда
+                бўлиш, чет элликларга тақлид қилиш эмас, балки улар асрлар
+                давомида хавас қилиб келган шарқона гўзалликни сақлаб қолиш.
               </p>
             </div>
           </div>
@@ -408,25 +430,21 @@ const App = () => {
               data-aos='fade-up'
               className='text-center mt-10 font-semibold text-lg gap-3 max-w-[900px] flex  flex-col mx-auto'
             >
-              <p className='w-full md:w-[70%] bg-white/10 p-6 rounded-md mx-auto'>
+              <p className='w-full  backdrop-blur-xl md:w-[70%] bg-white/10 p-6 rounded-md mx-auto'>
                 Назарий хамда амалий билимлар бирдек олиб борилади
               </p>
-              <p className='w-full md:w-[70%] bg-white/10 p-6 rounded-md mx-auto'>
+              <p className='w-full backdrop-blur-xl md:w-[70%] bg-white/10 p-6 rounded-md mx-auto'>
                 Салбий асоратлар билан хам ишлаш ургатилади
               </p>
-              <p className='w-full md:w-[70%] bg-white/10 p-6 rounded-md mx-auto'>
-                Укув программаси{' '}
+
+              <p className='w-full backdrop-blur-xl md:w-[70%] bg-white/10 p-6 rounded-md mx-auto'>
+                Билимлар:{' '}
                 <span className='text-orange-500 font-semibold'>
-                  3 ойга мулжалланган
-                </span>
-                , аммо хохишингизга
-              </p>
-              <p className='w-full md:w-[70%] bg-white/10 p-6 rounded-md mx-auto'>
-                Укув программаси{' '}
-                <span className='text-orange-500 font-semibold'> 2 ойга</span>{' '}
-                мулжалланган, аммо хохишингизга кура яна{' '}
-                <span className='text-orange-500 font-semibold'>4 ой</span>{' '}
-                амалиётингизни мустахкамлаш учун колишингиз мумкин.
+                  "Муаммо-препарат"
+                </span>{' '}
+                шаклида эмас, балки даволаш механизмлари кенгқамровлик шаклда
+                у'ргатилади. Шунда сиз маълум бир препарат ёки фирмага боғланиб
+                қолмайсиз.
               </p>
             </div>
           </div>
@@ -438,7 +456,7 @@ const App = () => {
               data-aos='fade-up'
               className='text-center text-3xl font-semibold'
             >
-              КОСМЕТОЛОГ БИЛАН{' '}
+              КОСМЕТОЛОГ БИЛАН <br />
               <span className='text-orange-500 font-semibold'>1 КУН</span>
             </h2>
             <div className='text-center mt-10 font-semibold text-lg gap-3 max-w-[900px] flex justify-between mx-auto'>
@@ -450,22 +468,19 @@ const App = () => {
                 <span className='text-orange-500 font-semibold'>
                   «Косметолог билан 1 кун»
                 </span>{' '}
-                дастури мавжуд. Унга кура сиз кун давомида косметлог фаолиятини
+                дастури мавжуд. Унга кура сиз кун давомида косметoлог фаолиятини
                 консультация бериш жараёнидан бошлаб, барча муолажаларни
                 утказилишигача, кузатишингиз мумкин булади, ва бу мутлако{' '}
                 <span className='text-orange-500 font-semibold'>БЕПУЛ</span>.
               </p>
             </div>
           </div>
-          <div className='flex justify-center mt-10'>
+          <div id='contact' className='flex justify-center mt-10'>
             <MyModal />
           </div>
         </section>
 
-        <section
-          id='contact'
-          className='py-24 relative bg-[url(/footer.webp)] bg-no-repeat bg-cover text-white text-center bg-fixed'
-        >
+        <section className='py-24 relative bg-[url(/footer.webp)] bg-no-repeat bg-cover text-white text-center bg-fixed'>
           <span className='absolute top-0 backdrop-blur-sm left-0 right-0 bottom-0 block -z-0 bg-black/50'></span>
           <div className='container mx-auto px-4 sm:px-10'>
             <h2
@@ -475,15 +490,20 @@ const App = () => {
               Богланиш учун <span className='text-orange-500'>контактлар:</span>
             </h2>
 
-            <div className='flex flex-col relative z-10 mt-4 gap-4 justify-center items-center font-bold text-2xl'>
-              <a className='hover:text-orange-500' href='#'>
-                Адмминистратор
+            <div className='flex flex-col relative z-10 mt-4 gap-4 justify-center items-center font-bold text-lg md:text-2xl'>
+              <a
+                data-aos='fade-up'
+                className='hover:text-orange-500 mt-10'
+                href='tel:+998998244404'
+              >
+                Администратор: +998 99 824 4404
               </a>
-              <a className='hover:text-orange-500' href='#'>
-                +998 97 728 20 40 - (Зилола Якубова)
-              </a>
-              <a className='hover:text-orange-500' href='#'>
-                +998 99 824 44 04 (продюсер)
+              <a
+                data-aos='fade-up'
+                className='hover:text-orange-500'
+                href='tel:+998977282040'
+              >
+                Зилола Якубова: +998 97 728 2040
               </a>
             </div>
           </div>

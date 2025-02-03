@@ -11,3 +11,13 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+.animate {
+  animation: fast 2s infinite;
+}
+
+@keyframes fast {
+  50% {
+    transform: translateY(20px);
+  }
+}

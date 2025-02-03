@@ -9,7 +9,7 @@ const tiers = [
     features: [
       '1 МОДУЛЬ (ссылкали тепага)',
       '2 МОДУЛЬ (ссылкали тепага)',
-      '(П см.) БОНУСЛАР 3 000 000 сумлик муолажалар: Юкоридаги санаб утилган муолажалар 2-5 маротаба. ',
+      '🎉 БОНУСЛАР: 3 000 000 сўмлик муолажалар. Юқорида санаб ўтилган муолажалар 2-5 марта.',
     ],
     featured: false,
   },
@@ -18,7 +18,7 @@ const tiers = [
     name: 'BASIC',
     id: 'tier-hobby',
     priceMonthly: '$800',
-    description: '2 хафта',
+    description: '4 хафта',
     features: [
       '1 МОДУЛЬ (ссылкали тепага)',
       '2 МОДУЛЬ (ссылкали тепага)',
@@ -32,7 +32,7 @@ const tiers = [
     name: 'ADVANCED',
     id: 'tier-hobby',
     priceMonthly: '$1500',
-    description: '',
+    description: '7 хафта + 2 ой амалиёт',
     features: [
       '1 МОДУЛЬ (ссылкали тепага)',
       '2 МОДУЛЬ (ссылкали тепага)',
@@ -48,7 +48,7 @@ const tiers = [
     name: 'PROFESSIONAL',
     id: 'tier',
     priceMonthly: '$2000',
-    description: '',
+    description: '12 хафта + 3 ой амалиёт',
     features: [
       '1 МОДУЛЬ (ссылкали тепага)',
       '2 МОДУЛЬ (ссылкали тепага)',
@@ -58,8 +58,7 @@ const tiers = [
       '6 МОДУЛЬ (ссылкали тепага)',
       '7 МОДУЛЬ (ссылкали тепага)',
       '8 МОДУЛЬ (ссылкали тепага)',
-      'Сертификат',
-      '(П см.) БОНУСЛАР $700-лик муолажалар: Ботокс, Биоревитализация',
+      'Сертификат',
     ],
     featured: true,
   },
@@ -71,7 +70,7 @@ function classNames(...classes: string[]) {
 
 export default function Example() {
   return (
-    <div className='relative isolate bg-white px-6 py-24  lg:px-8'>
+    <div className='relative isolate bg-white px-6 pb-24  lg:px-8'>
       <div
         aria-hidden='true'
         className='absolute inset-x-0 -top-3 -z-10 transform-gpu overflow-hidden px-36 blur-3xl'
@@ -86,7 +85,7 @@ export default function Example() {
       </div>
       <div className='mx-auto max-w-4xl text-center'>
         <p className='mt-2 text-3xl font-semibold tracking-tight text-balance text-gray-900 sm:text-4xl'>
-          КУРС НАРХИ <span className='text-orange-500'>НЕЧAПУЛ?</span>
+          <span className='text-orange-500 font-semibold'>КУРС</span> НАРХИ
         </p>
       </div>
 
@@ -144,7 +143,11 @@ export default function Example() {
               )}
             >
               {tier.features.map((feature) => (
-                <li key={feature} className='flex gap-x-3'>
+                <a
+                  href={'#' + feature.charAt(0)}
+                  key={feature}
+                  className='flex gap-x-3 hover:text-orange-500'
+                >
                   <CheckIcon
                     aria-hidden='true'
                     className={classNames(
@@ -153,7 +156,7 @@ export default function Example() {
                     )}
                   />
                   {feature}
-                </li>
+                </a>
               ))}
             </ul>
           </div>
