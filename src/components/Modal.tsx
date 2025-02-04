@@ -88,6 +88,7 @@ export default function MyModal() {
                   onChange={inputChange}
                   className='border placeholder:text-black/80 border-solid focus-within:border-orange-500 border-black px-3 py-2 rounded-md'
                   type='text'
+                  name='fullName'
                   placeholder='Исмингизни киритинг'
                 />
                 <input
@@ -95,6 +96,7 @@ export default function MyModal() {
                   onChange={inputChange}
                   className='border placeholder:text-black/80 focus-within:border-orange-500 border-solid border-black px-3 py-2 rounded-md'
                   type='tel'
+                  name='phone'
                   placeholder='Телефон рақамингиз'
                 />
                 <Button
