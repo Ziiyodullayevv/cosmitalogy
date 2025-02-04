@@ -3,7 +3,7 @@ import axios from 'axios';
 import { useState } from 'react';
 
 export default function MyModal() {
-  const TELEGRAM_BOT_TOKEN = '7942001008:AAGfDHp8RYROV-nEHtimgZhKiQrOwH5f6zs'; // Bot tokenini shu yerga kiriting
+  const TELEGRAM_BOT_TOKEN = '7485479714:AAFXqoL8J_H8T7AE9rqqrJgAYPWTqrwl4m4'; // Bot tokenini shu yerga kiriting
   const TELEGRAM_CHAT_ID = '2045626709';
 
   let [isOpen, setIsOpen] = useState(false);
