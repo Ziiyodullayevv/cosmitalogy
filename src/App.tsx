@@ -147,17 +147,8 @@ const App = () => {
         <section className='py-24'>
           <div className='container mx-auto px-4 sm:px-10'>
             <div className='flex items-center flex-col lg:flex-row lg:justify-between gap-10'>
-              <div
-                data-aos='fade-up'
-                className='flex-1 rounded-lg overflow-hidden max-h-[500px] relative'
-              >
-                <span
-                  style={{
-                    background: 'linear-gradient(transparent 40%, black 150%)',
-                  }}
-                  className='absolute top-0 bottom-0 right-0 left-0'
-                ></span>
-                <img className='w-full' src='/woman.webp' alt='woman' />
+              <div data-aos='fade-up' className='flex-1 rounded-lg  relative'>
+                <img className='w-full' src='/banner.webp' alt='woman' />
               </div>
 
               <div data-aos='fade-up' data-aos-delay='300' className='flex-1'>
